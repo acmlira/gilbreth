@@ -5,10 +5,7 @@ type lessThan struct {
 }
 
 func (l lessThan) Check(map[string]any) bool {
-	if l.X.(int) < l.Y.(int) {
-		return true
-	}
-	return false
+	return l.X.(int) < l.Y.(int)
 }
 
 func LessThan(key string, x int) Condition {

@@ -8,7 +8,7 @@ import (
 	"github.com/acmlira/gilbreth/internal/domain/step"
 )
 
-func TestFlow(t *testing.T) {
+func TestFlow(*testing.T) {
 	F := flow.New("my-flow")
 	S1 := step.New("has key ", condition.IsPresent("my-key2"))
 	S2 := step.New("has int")

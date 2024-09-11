@@ -45,10 +45,7 @@ func (q *queue) Head() any {
 }
 
 func (q *queue) IsEmpty() bool {
-	if q.size == 0 {
-		return true
-	}
-	return false
+	return q.size == 0
 }
 
 func NewQueue() Queue {
